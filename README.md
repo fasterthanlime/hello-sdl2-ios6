@@ -1,4 +1,4 @@
-### hello-sdl2-ios6
+## hello-sdl2-ios6
 
 Just testing out a pure C application using SDL 2.0 (still in dev),
 OpenGL ES, running on iphonesimulator6.0, built using cmake + Xcode.
