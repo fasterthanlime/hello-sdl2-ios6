@@ -15,11 +15,8 @@ Then hit 'Build and run' and you should see a red screen (exciting, right?)
 
 ### How to build for an actual device
 
-I haven't tested this, but you should be able to do it.
-Open `CMakeLists.txt`, replace `iphonesimulator` with `iphoneos`
-in CMAKE_OSX_SYSROOT, and it should build + run splendidly.
-
-Let me know if it works for you!
+When opening the XCode project, change the target to 'iPhone device'
+and run it on your iPhone. Should work splendidly!
 
 ### Notes
 
