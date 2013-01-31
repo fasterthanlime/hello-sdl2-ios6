@@ -66,6 +66,10 @@ int main(int argc, char **argv) {
   int numIndices;
   createGeometry(&vertexBuffer, &indexBuffer, &numIndices);
 
+  // Compile shaders
+  GLuint _positionSlot, _colorSlot;
+  loadShaders(&_positionSlot, &_colorSlot);
+
   bool running = true;
   SDL_Event event;
 
@@ -78,8 +82,6 @@ int main(int argc, char **argv) {
     glClearColor(0.1, 0.2, 0.1, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
 
-    /*
-     
     // Set up the viewport
     glViewport(0, 0, screen_width, screen_height);
 
@@ -91,8 +93,6 @@ int main(int argc, char **argv) {
 
     // Draw it!
     glDrawElements(GL_TRIANGLES, numIndices, GL_UNSIGNED_BYTE, 0);
-
-    */
 
     SDL_GL_SwapWindow(win);
   }

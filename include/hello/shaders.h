@@ -4,5 +4,7 @@
 #include <hello/hello.h>
 #include <SDL_rwops.h>
 
+void loadShaders(GLuint *_positionSlot, GLuint *_colorSlot);
+
 #endif
 

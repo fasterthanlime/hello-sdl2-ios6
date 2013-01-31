@@ -6,6 +6,7 @@ set(HEADERS
 )
 set(SOURCES
     src/main.c
+    src/shaders.c
 )
 
 set(IOS_FRAMEWORKS
@@ -17,7 +18,7 @@ set(IOS_FRAMEWORKS
     OpenGLES
 )
 
-set(CMAKE_OSX_SYSROOT iphonesimulator6.0)
+set(CMAKE_OSX_SYSROOT iphonesimulator6.1)
 set(CMAKE_OSX_ARCHITECTURES "$(ARCHS_STANDARD_32_BIT)")
 foreach(FW ${IOS_FRAMEWORKS})
     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -framework ${FW}")
