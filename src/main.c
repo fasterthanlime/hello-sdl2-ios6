@@ -23,6 +23,9 @@ int main(int argc, char **argv)
     if (!win)
         sdl_error_die();
 
+    // Use OpenGL ES 2.0
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 2);
+
     ctx = SDL_GL_CreateContext(win);
     SDL_GL_SetSwapInterval(1);
 
